@@ -1,0 +1,4 @@
+set realname='Сервер журналирования'
+set from=syslog-server@nicetu.spb.ru
+set sendmail="/usr/bin/msmtp"
+set envelope_from=yes
