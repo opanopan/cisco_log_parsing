@@ -82,5 +82,5 @@ ret2 = subprocess.call("echo \"Отчет по vpn-доступу во влож�
 #ret2 = subprocess.call("echo \"Отчет по vpn-доступу во вложении.\"|mutt -s \"log\" o_pan@nicetu.spb.ru -c pavlovskiy.michail@nicetu.spb.ru -c nikolai.aparin@nicetu.spb.ru -a /root/cisco_log/list.xls",shell=True)
 
 
-#ret = subprocess.call("logrotate -f /root/cisco_log/syslogrotate.conf", shell=True)  #запускаем внешнюю команду
+ret = subprocess.call("logrotate -f /root/cisco_log/syslogrotate.conf", shell=True)  #запускаем внешнюю команду
                                                                                      #ротации лога
