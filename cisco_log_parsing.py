@@ -78,7 +78,7 @@ wb.save('/root/cisco_log/list.xls')			    #сохраняем файл
 
 
 ## отправка почты
-ret2 = subprocess.call("echo \"Отчет по vpn-доступу во вложении.\"|mutt -s \"Журнал vpn\" o_pan@nicetu.spb.ru  -c pavlovskiy.michail@nicetu.spb.ru -c nikolai.aparin@nicetu.spb.ru -a /root/cisco_log/list.xls",shell=True) 	 
+ret2 = subprocess.call("echo \"Отчет по vpn-доступу во вложении.\"|mutt -s \"Журнал vpn\" admin@test.spb.ru -a /root/cisco_log/list.xls",shell=True) 	 
 
 ret = subprocess.call("logrotate -f /root/cisco_log/syslogrotate.conf", shell=True)  #запускаем внешнюю команду
                                                                                      #ротации лога
